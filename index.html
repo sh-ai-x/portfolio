@@ -65,17 +65,7 @@
           </div>
         </article>
         <article class="card">
-          <pre class="card-terminal" aria-label="agent-graph-tui sample output"><code>$ agent-graph-tui &lt;/dev/null
-agent-graph-tui — 29 of 32 sessions visible
-
-  agent-graph-tui
-    ⏵ main
-      [○] 542646d4
-
-  dev-harness-kit
-    ⏵ main
-      [○] a5173104
-      [●] 9a627bcc</code></pre>
+          <img class="card-media" src="assets/agent-graph-tui.png" alt="agent-graph-tui text-mode output showing sessions grouped by repo, with the cyan-filled dot marking a currently running session" loading="lazy" />
           <h3>agent-graph-tui</h3>
           <p>Single-binary terminal dashboard for AI coding agent sessions. Surfaces every active Claude Code / Codex / MiniMax / Gemini session on the machine, grouped by repo → branch, with live/idle status — and drills into any session's full execution graph. Read-only, no daemon, ~0.7MB binary, ~1s cold start, ~10MB RSS.</p>
           <div class="card-footer">
@@ -93,14 +83,7 @@ agent-graph-tui — 29 of 32 sessions visible
           </div>
         </article>
         <article class="card">
-          <ol class="card-pipeline" aria-label="analyze-trust-suite pipeline stages">
-            <li>define-analysis</li>
-            <li>kaggle-discover</li>
-            <li>colab/local-setup</li>
-            <li>hypothesis-eda</li>
-            <li>analysis-cycle</li>
-            <li>verify-report</li>
-          </ol>
+          <img class="card-media" src="assets/analyze-trust-suite.png" alt="analyze-trust-suite pipeline diagram: 6-stage analysis pipeline feeding into dual-axis trust evaluation (LLM + code metrics), qa-reviewer, and head-of-data" loading="lazy" />
           <h3>analyze-trust-suite</h3>
           <p>End-to-end data-analysis pipeline consolidated from 3 separate repos into a single plugin — one <code>plugin.json</code>, 24 skills. Runs the 6-stage pipeline above (dataset discovery → EDA → modeling → verified report), plus a goal-clarification loop and dual-axis trust evaluation (LLM + code-based metrics) before a QA review gate.</p>
           <div class="card-footer">
