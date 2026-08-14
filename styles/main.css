@@ -239,53 +239,6 @@ a:hover { color: var(--link-hover); }
   background: var(--bg-subtle);
 }
 
-.card-terminal {
-  width: 100%;
-  height: 300px;
-  box-sizing: border-box;
-  margin: 0;
-  padding: var(--space-4);
-  border-radius: var(--radius-sm);
-  border: var(--border-width) solid var(--border);
-  background: var(--color-gray-900);
-  color: var(--color-gray-100);
-  font-family: var(--font-mono);
-  font-size: var(--fs-sm);
-  line-height: var(--lh-normal);
-  overflow: auto;
-}
-.card-terminal code { color: inherit; white-space: pre; }
-
-.card-pipeline {
-  counter-reset: stage;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  gap: var(--space-2);
-  height: 300px;
-  box-sizing: border-box;
-  margin: 0;
-  padding: var(--space-3);
-  border-radius: var(--radius-sm);
-  border: var(--border-width) solid var(--border);
-  background: var(--bg-subtle);
-  list-style: none;
-  overflow: auto;
-}
-.card-pipeline li {
-  counter-increment: stage;
-  font-family: var(--font-mono);
-  font-size: var(--fs-xs);
-  background: var(--surface);
-  border: var(--border-width) solid var(--border);
-  border-radius: var(--radius-sm);
-  padding: var(--space-1) var(--space-2);
-}
-.card-pipeline li::before {
-  content: counter(stage) ". ";
-  color: var(--fg-muted);
-}
-
 .tag {
   font-family: var(--font-mono);
   font-size: var(--fs-xs);
@@ -335,5 +288,5 @@ a:hover { color: var(--link-hover); }
   .nav { display: none; }
   .contact-links { flex-direction: column; gap: var(--space-3); }
   .grid { grid-template-columns: 1fr; }
-  .card-media, .card-terminal, .card-pipeline { height: 200px; }
+  .card-media { height: 200px; }
 }
