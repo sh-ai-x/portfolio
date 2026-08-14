@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<script>
+(function () {
+  var stored = localStorage.getItem("theme");
+  if (stored) document.documentElement.setAttribute("data-theme", stored);
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>sh-ai-x — Software Engineer &amp; AI Engineer</title>
+<meta name="description" content="sh-ai-x — Software Engineer & AI Engineer building dev tooling and agent harnesses that make AI coding agents reliable." />
+<meta property="og:title" content="sh-ai-x — Software Engineer & AI Engineer" />
+<meta property="og:description" content="Dev tooling and AI agent harnesses that make AI coding agents reliable." />
+<meta property="og:type" content="website" />
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="#top">sh-ai-x</a>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
+      <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <section id="hero" class="hero">
+    <div class="wrap">
+      <h1>sh-ai-x</h1>
+      <p class="tagline">Software Engineer &amp; AI Engineer — building dev tooling and agent harnesses that make AI coding agents reliable.</p>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="wrap wrap-narrow">
+      <h2>About</h2>
+      <p>I build developer tooling and AI agent harnesses — from TDD-gated coding harnesses to real-time agent execution dashboards and reliability patterns for backend systems. My focus is making AI-assisted engineering rigorous and verifiable, not just fast.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="wrap">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>dev-harness-kit</h3>
+          <p>AI-native dev harness skill kit for Claude Code &amp; Codex: TDD gates, git-workflow enforcement, CI templates, automated review.</p>
+          <div class="card-footer">
+            <span class="tag">Python</span>
+            <a href="https://github.com/sh-ai-x/dev-harness-kit" target="_blank" rel="noopener">View on GitHub →</a>
+          </div>
+        </article>
+        <article class="card">
+          <h3>agent-graph-tui</h3>
+          <p>Single-binary terminal dashboard for AI coding agent sessions — surfaces every active Claude Code / Codex / MiniMax / Gemini session grouped by repo → branch, plus per-session execution graphs. ~0.7MB binary, ~1s cold start, read-only, no daemon.</p>
+          <div class="card-footer">
+            <span class="tag">Rust</span>
+            <a href="https://github.com/sh-ai-x/agent-graph-tui" target="_blank" rel="noopener">View on GitHub →</a>
+          </div>
+        </article>
+        <article class="card">
+          <h3>archidraw</h3>
+          <p>Local, MCP-controlled whiteboard: Claude Code edits a scene and a Vite GUI renders it live through a localhost bridge.</p>
+          <div class="card-footer">
+            <span class="tag">TypeScript</span>
+            <a href="https://github.com/sh-ai-x/archidraw" target="_blank" rel="noopener">View on GitHub →</a>
+          </div>
+        </article>
+        <article class="card">
+          <h3>order-reliability-lab</h3>
+          <p>Backend reliability patterns — pessimistic vs. optimistic locking, idempotency, distributed locks — demonstrated on a single order/inventory domain.</p>
+          <div class="card-footer">
+            <span class="tag">Python</span>
+            <a href="https://github.com/sh-ai-x/order-reliability-lab" target="_blank" rel="noopener">View on GitHub →</a>
+          </div>
+        </article>
+        <article class="card">
+          <h3>analyze-trust-suite</h3>
+          <p>End-to-end data analysis + trust evaluation + meta-orchestrator — a single plugin with 24 skills.</p>
+          <div class="card-footer">
+            <span class="tag">Python</span>
+            <a href="https://github.com/sh-ai-x/analyze-trust-suite" target="_blank" rel="noopener">View on GitHub →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="wrap wrap-narrow">
+      <h2>Skills</h2>
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <ul class="tag-list">
+          <li>Python</li><li>Rust</li><li>TypeScript</li><li>Shell</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>AI &amp; Agent Tooling</h3>
+        <ul class="tag-list">
+          <li>MCP Protocol</li><li>Claude Code</li><li>Codex</li><li>Agent Harness Design</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Systems &amp; Reliability</h3>
+        <ul class="tag-list">
+          <li>CI/CD</li><li>TDD</li><li>Distributed Locking</li><li>Idempotency</li><li>Data Pipelines</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="wrap wrap-narrow">
+      <h2>Contact</h2>
+      <p class="contact-links">
+        <a href="https://github.com/sh-ai-x" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="mailto:tkd1496@gmail.com">Email ↗</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 sh-ai-x</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
