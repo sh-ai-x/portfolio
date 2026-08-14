@@ -229,17 +229,20 @@ a:hover { color: var(--link-hover); }
 
 .card-media {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: 180px;
+  box-sizing: border-box;
+  padding: var(--space-2);
   border-radius: var(--radius-sm);
   border: var(--border-width) solid var(--border);
-  object-fit: cover;
-  object-position: top;
-  background: var(--bg);
+  object-fit: contain;
+  object-position: center;
+  background: var(--bg-subtle);
 }
 
 .card-terminal {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: 180px;
+  box-sizing: border-box;
   margin: 0;
   padding: var(--space-3);
   border-radius: var(--radius-sm);
@@ -259,13 +262,15 @@ a:hover { color: var(--link-hover); }
   flex-wrap: wrap;
   align-content: center;
   gap: var(--space-2);
-  aspect-ratio: 16 / 9;
+  height: 180px;
+  box-sizing: border-box;
   margin: 0;
   padding: var(--space-3);
   border-radius: var(--radius-sm);
   border: var(--border-width) solid var(--border);
   background: var(--bg-subtle);
   list-style: none;
+  overflow: auto;
 }
 .card-pipeline li {
   counter-increment: stage;
